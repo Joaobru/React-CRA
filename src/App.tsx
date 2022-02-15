@@ -11,7 +11,7 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-      <h1>Portfolio</h1>
+      <h1>Boiler Plate</h1>
     </div>
   );
 }
