@@ -1,4 +1,5 @@
 import React from 'react';
+import GlobalStyles from './styles/global';
 
 /**
  * @export
@@ -10,9 +11,10 @@ import React from 'react';
  */
 function App() {
   return (
-    <div className="App">
+    <>
+      <GlobalStyles />
       <h1>Boiler Plate</h1>
-    </div>
+    </>
   );
 }
 
