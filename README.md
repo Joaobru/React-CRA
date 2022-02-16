@@ -3,7 +3,6 @@
   projeto React, por isso eu adicionei apenas o primordial para mim, não fiz a inclusão de tecnologias
   muito específicas como para o gerenciamento de estado global da nossa aplicação, pois depende muito 
   do projeto que será desenvolvido, UI Libs, Comunicação com a api porque aplicações mais simples não necessitam...
-  Fique a vontade para criar um fork do projeto e adicionar o fundamental para você. 
 </p>
 
 ## 🛠 Tecnologias
