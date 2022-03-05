@@ -1,5 +1,7 @@
 import React from 'react';
-import GlobalStyles from './styles/global';
+
+import Home from './components/Home';
+import GlobalStyles from './assets/styles/global';
 
 /**
  * @export
@@ -10,12 +12,12 @@ import GlobalStyles from './styles/global';
  * Responsável por renderizar todos os componentes
  */
 function App() {
-  return (
-    <>
-      <GlobalStyles />
-      <h1>Boiler Plate</h1>
-    </>
-  );
+	return (
+		<>
+			<GlobalStyles />
+			<Home />
+		</>
+	);
 }
 
 export default App;
