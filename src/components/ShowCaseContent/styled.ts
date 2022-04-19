@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ShowCaseStyled = styled.div`
-	height: 95%;
+	height: 100%;
 	display: grid;
 `;
 
@@ -14,7 +14,7 @@ export const ContainerStyled = styled.div`
 
 	@media (max-width: 768px) {
 		flex-direction: column-reverse;
-		justify-content: start;
+		justify-content: center;
 		padding-right: 20px;
 		padding-left: 20px;
 	}
@@ -23,12 +23,12 @@ export const ContainerStyled = styled.div`
 export const TitleStyled = styled.h1`
 	color: var(--text-light);
 	font-size: 42px;
-	margin-bottom: 16px;
+	margin-bottom: 4px;
 
 	@media (max-width: 768px) {
-		font-size: 26px;
+		font-size: 24px;
 		margin-top: 40px;
-		margin-bottom: 26px;
+		margin-bottom: 18px;
 	}
 `;
 
@@ -38,7 +38,7 @@ export const SubTitleStyled = styled.h2`
 	font-weight: 400;
 
 	@media (max-width: 768px) {
-		font-size: 20px;
+		font-size: 18px;
 	}
 `;
 
@@ -48,7 +48,7 @@ export const ContainerImageStyled = styled.div`
 	justify-content: center;
 	border-radius: 100%;
 	height: 340px;
-	width: 340px;
+	min-width: 340px;
 	background-color: var(--background);
 
 	img {
@@ -57,11 +57,11 @@ export const ContainerImageStyled = styled.div`
 	}
 
 	@media (max-width: 768px) {
-		height: 280px;
-		width: 280px;
+		height: 260px;
+		min-width: 260px;
 
 		img {
-			max-height: 260px;
+			max-height: 240px;
 		}
 	}
 `;

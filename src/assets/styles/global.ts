@@ -30,10 +30,16 @@ export default createGlobalStyle`
     }
   }
 
-  body { 
+  body {
     background: var(--background);
     -webkit-font-smoothing: antialised;
   }
+
+	html, body {
+		@media (max-width: 768px) {
+			overflow-x: hidden;
+		}
+	}
 
   body, input, textarea, button, select {
     font-family: 'Roboto', sans-serif;
@@ -50,13 +56,13 @@ export default createGlobalStyle`
 
   .reveal {
     position: relative;
-    transform: translateY(80px);
+		margin-top: 80px;
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 1.5s ease;
   }
 
   .reveal.active {
-    transform: translateY(0);
+		margin-top: 0;
     opacity: 1;
   }
 `;

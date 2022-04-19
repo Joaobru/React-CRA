@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import {
 	ShowCaseStyled,
 	ContainerStyled,
@@ -18,22 +20,28 @@ import ContactList from '../ContactList';
  * Responsável por renderizar o titulo, subtitulo, lista de contatos
  * e a minha foto.
  */
-export const ShowCaseContent = () => (
-	<ShowCaseStyled>
-		<ContainerStyled>
-			<div>
-				<div>
-					<TitleStyled>João Paulo Brune Dos Santos</TitleStyled>
+export const ShowCaseContent = () => {
+	const { t } = useTranslation();
 
-					<SubTitleStyled>Desenvolvedor Front End</SubTitleStyled>
+	return (
+		<ShowCaseStyled>
+			<ContainerStyled>
+				<div>
+					<div>
+						<TitleStyled>João Paulo Brune Dos Santos</TitleStyled>
+
+						<SubTitleStyled>
+							{t('home.showCaseContent.ocupation')}
+						</SubTitleStyled>
+					</div>
+
+					<ContactList />
 				</div>
 
-				<ContactList />
-			</div>
-
-			<ContainerImageStyled>
-				<img src={myPhotoImg} alt="João Paulo" />
-			</ContainerImageStyled>
-		</ContainerStyled>
-	</ShowCaseStyled>
-);
+				<ContainerImageStyled>
+					<img src={myPhotoImg} alt="João Paulo" />
+				</ContainerImageStyled>
+			</ContainerStyled>
+		</ShowCaseStyled>
+	);
+};

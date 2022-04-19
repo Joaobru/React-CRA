@@ -1,1 +1,5 @@
 commitlint.config.js
+
+*.svg
+*.png
+*.gif
