@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import {
 	ContainerSkillStyled,
 	ContainerContentSkillStyled,
@@ -22,15 +24,21 @@ type Props = {
  * @description
  * Responsável por renderizar o item de uma lista de habilidades
  */
-export const SkillItem = ({ img, link, title, level }: Props) => (
-	<LinkStyled href={link} target="_blank" rel="noreferrer">
-		<ContainerSkillStyled>
-			<ImgStyled src={img} alt="React" />
+export const SkillItem = ({ img, link, title, level }: Props) => {
+	const { t } = useTranslation();
 
-			<ContainerContentSkillStyled>
-				<TechStyled>{title}</TechStyled>
-				<TextStyled>Nível - {level}</TextStyled>
-			</ContainerContentSkillStyled>
-		</ContainerSkillStyled>
-	</LinkStyled>
-);
+	return (
+		<LinkStyled href={link} target="_blank" rel="noreferrer">
+			<ContainerSkillStyled>
+				<ImgStyled src={img} alt="React" />
+
+				<ContainerContentSkillStyled>
+					<TechStyled>{title}</TechStyled>
+					<TextStyled>
+						{t('home.skills.titleLevel')} - {level}
+					</TextStyled>
+				</ContainerContentSkillStyled>
+			</ContainerSkillStyled>
+		</LinkStyled>
+	);
+};

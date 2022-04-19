@@ -1,3 +1,11 @@
+import reactIcon from '../../assets/icons/react.svg';
+import nextIcon from '../../assets/icons/nextjs.svg';
+import angularIcon from '../../assets/icons/angular.svg';
+import vueIcon from '../../assets/icons/vue.svg';
+import nodeIcon from '../../assets/icons/nodejs.svg';
+import expressIcon from '../../assets/icons/express.svg';
+import dockerIcon from '../../assets/icons/docker.svg';
+
 export default {
 	translations: {
 		home: {
@@ -90,6 +98,60 @@ export default {
 									antigas, também comecei a inserir um sistema de contabilidade.`,
 							},
 						],
+					},
+				],
+			},
+			skills: {
+				title: 'Habilidades',
+				titleLevel: 'Nível',
+				list: [
+					{
+						icon: reactIcon,
+						link: 'https://pt-br.reactjs.org/',
+						title: 'ReactJS',
+						level: 'Avançado',
+					},
+					{
+						icon: reactIcon,
+						link: 'https://reactnative.dev/',
+						title: 'React Native',
+						level: 'Intermediário',
+					},
+					{
+						icon: nextIcon,
+						link: 'https://nextjs.org/',
+						title: 'NextJS',
+						level: 'Avançado',
+					},
+					{
+						icon: angularIcon,
+						link: 'https://angular.io/',
+						title: 'Angular',
+						level: 'Básico',
+					},
+					{
+						icon: vueIcon,
+						link: 'https://vuejs.org/',
+						title: 'VueJS',
+						level: 'Básico',
+					},
+					{
+						icon: nodeIcon,
+						link: 'https://nodejs.org/en/',
+						title: 'NodeJs',
+						level: 'Intermediário',
+					},
+					{
+						icon: expressIcon,
+						link: 'https://expressjs.com/pt-br/',
+						title: 'Express',
+						level: 'Básico',
+					},
+					{
+						icon: dockerIcon,
+						link: 'https://www.docker.com/',
+						title: 'Docker',
+						level: 'Básico',
 					},
 				],
 			},
