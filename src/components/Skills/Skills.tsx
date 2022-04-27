@@ -32,6 +32,7 @@ export const Skills = () => {
 						link={skill.link}
 						title={skill.title}
 						level={skill.level}
+						key={skill.id}
 					/>
 				))}
 			</ContainerSkillsStyled>
